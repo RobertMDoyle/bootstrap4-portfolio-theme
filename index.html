@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Bootstrap Theme</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- START CONTENT CONTAINER (Overridden in custom CSS to 1400px from default Bootstrap of 1199px for wider screens) -->
+  <div class="container">
+
+    <header id="main-header">
+      <div class="row no-gutters">
+        <!-- Profile Image -->
+        <div class="col-lg-4 col-md-5">
+          <img src="img/person1.jpg" alt="">
+        </div>
+        <!-- 3 Stacked Flex Column to Right of Profile Image -->
+        <div class="col-lg-8 col-md-7">
+          <div class="d-flex flex-column">
+            <!-- Row with person name and social media icons -->
+            <div class="p-5 bg-dark text-white">
+              <div class="d-flex flex-row justify-content-between align-items-center">
+                <h1 class="display-4">John Doe</h1>
+                <!-- Social Media Icon Div Twitter (Does not appear on small screens using d-none) -->
+                <div class="d-none d-md-block">
+                  <a href="http://twitter.com" class="text-white">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </div>
+                <!-- Social Media Icon Div Facebook -->
+                <div>
+                  <a href="http://facebook.com" class="text-white">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </div>
+                <!-- Social Media Icon Div Instagram -->
+                <div>
+                  <a href="http://instagram.com" class="text-white">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+                <!-- Social Media Icon Div GitHub -->
+                <div>
+                  <a href="http://github.com" class="text-white">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Row with Job title -->
+            <div class="p-4 bg-black">
+              Experienced Full Stack Web Developer
+            </div>
+            <!-- Row with portfolio items -->
+            <div>
+              <div class="d-flex flex-row text-white align-items-stretch text-center">
+                <!-- Home Portfolio Item Collapse -->
+                <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
+                  <i class="fas fa-home fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">Home</span>
+                </div>
+                <!-- Resume Portfolio Item Collapse -->
+                <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
+                  <i class="fas fa-graduation-cap fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">Resume</span>
+                </div>
+                <!-- Home Portfolio Item Collapse -->
+                <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#work">
+                  <i class="fas fa-folder-open fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">Work</span>
+                </div>
+                <!-- Home Portfolio Item Collapse -->
+                <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
+                  <i class="fas fa-envelope fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">Contact</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HOME -->
+    <div id="home" class="collapse show">
+      <!-- Home Heading Card -->
+      <div class="card card-body bg-primary text-white py-5">
+        <h2>Welcome To My Page</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nesciunt!</p>
+      </div>
+      <!-- Home Skillset Card-->
+      <div class="card card-body py-5">
+        <h3>My Skills</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, aut? Aspernatur distinctio quidem ipsum
+          officiis!</p>
+        <hr>
+        <!-- HTML5 Skill Bar -->
+        <h4>HTML 5</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width: 100%"></div>
+        </div>
+        <!-- CSS3 Skill Bar -->
+        <h4>CSS 3</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width: 100%"></div>
+        </div>
+        <!-- JavaScript Skill Bar -->
+        <h4>JavaScript</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width: 82%"></div>
+        </div>
+        <!-- PHP Skill Bar -->
+        <h4>PHP</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width: 80%"></div>
+        </div>
+        <!-- Wordpress Skill Bar -->
+        <h4>WordPress</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width: 85%"></div>
+        </div>
+        <!-- Skill Bar -->
+        <h4>BootStrap 4</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width: 90%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESUME -->
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="p-5 bg-dark text-white">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="#" class="btn btn-outline-light">
+            <i class="fas fa-cloud"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- END CONTENT CONTAINER -->
+  </div>
+
+  <!-- END HERE -->
+
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+  </script>
+</body>
+
+</html>
